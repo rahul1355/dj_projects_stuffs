@@ -1,0 +1,12 @@
+{% extends 'urlapp/base.html' %}
+
+{% block body_block %}
+
+    <h1>Welcome to Home page!!</h1>
+    <h4>We are in Home page.html</h4>
+
+    <!-- <h2>{{ quotes | upper }}</h2> -->
+    {{ quotes | cut:'i'}}
+    <h3>{{ number | add:123 }}</h3>
+
+{% endblock %}

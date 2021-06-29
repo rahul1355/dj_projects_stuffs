@@ -1,0 +1,8 @@
+{% extends 'urlapp/base.html' %}
+
+{% block body_block %}
+    <h1>Welcome to Relative Url page!!</h1>
+    <a href="{% url 'urlapp:other' %}">other page</a>
+    <a href="{% url 'admin:index' %}">Admin</a>
+    <a href="{% url 'index' %}">link to index</a>
+{% endblock %}
